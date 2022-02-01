@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estiloEdiconG.css">
+    <!-- FONT POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <title> Edição Gráfica | TWDM </title>
+</head>
+<body>
+    <h1> Edição Gráfica </h1>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for projects.." title="Type in a name" autocomplete="off">
+
+    <ul id="myUL">
+        <li> <a href="TrabalhosEdicaoG.html"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> Trabalhos 1º Semestre </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+        <li> <a href="#"> <i class="fa fa-folder" style="padding: 0px 10px; color: #f5ce1f;"> </i> ????? </a> </li>
+    </ul>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+</body>
+</html>

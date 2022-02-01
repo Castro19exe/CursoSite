@@ -1,0 +1,76 @@
+#edicaoG {
+    height: 410px;
+    padding: 35px 65px 90px 65px;
+    background-color: white;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+#edicaoG #title {
+    margin-top: 149px;
+    margin-bottom: 30px;
+    font-size: 600%;
+}
+
+#edicaoG #text {
+    font-size: 120%;
+    text-align: justify;
+}
+
+#edicaoG #more {
+    background-color: dodgerblue;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#edicaoG #more:hover {
+    background-color: rgb(86, 170, 255);
+}
+
+/* Others Subjects */
+
+#others {
+    padding: 10px 65px 50px 65px;
+    background-color: white;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+#others #title {
+    font-size: 600%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#others #text {
+    font-size: 120%;
+    text-align: justify;
+}
+
+#others #more {
+    background-color: dodgerblue;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#others #more:hover {
+    background-color: rgb(86, 170, 255);
+}
